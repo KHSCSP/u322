@@ -34,7 +34,7 @@ for c in unique_countries:
         sum_elec = df[df['Entity'] == c]['Access']
 
         # add each countries data to the graph
-        plt.plot(years, sum_elec, label=c, marker=random.choice(markers), linestyle=random.choice(linetypes))
+        plt.plot(years, sum_elec, label=c)
 
   
 plt.ylabel('Percentage of Country Population')
